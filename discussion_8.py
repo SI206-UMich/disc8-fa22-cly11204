@@ -1,5 +1,6 @@
 #Name: Caitlin Yeung
 #SI 206
+#Discussion 8
 
 from bs4 import BeautifulSoup
 import requests
