@@ -1,3 +1,6 @@
+#Name: Caitlin Yeung
+
+
 from bs4 import BeautifulSoup
 import requests
 import unittest
@@ -19,11 +22,16 @@ def getAdmissionsInfo2019(soup):
 
 #table
 #t-body
+#do tr on the top 
+# in the for loop do td 
 #td
 
     school = soup.find('table', class_= "toccoulours")
     schools = school.find_all('a')
-    print(school)
+
+    for college in schools: 
+        soup.find('td')
+        
     url = 'https://en.wikipedia.org' + schools.get('href')
 
 
